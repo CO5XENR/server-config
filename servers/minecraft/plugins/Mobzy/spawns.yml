@@ -21,7 +21,7 @@ regions:
           - !<geary:light>
             range: 7..15
           - !<mobzy:spawn.gap>
-            range: 2..256
+            range: 2..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -34,7 +34,9 @@ regions:
             max: 6
             radius: 200
           - !<mobzy:spawn.gap>
-            range: 2..256
+            range: 2..4096
+          - !<mobzy:spawn.delay>
+            attemptEvery: 4s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -49,7 +51,7 @@ regions:
             max: 3
             radius: 120
           - !<mobzy:spawn.gap>
-            range: 10..256
+            range: 10..4096
 
       - mob: mobzy:splitjaw
         priority: 0.05
@@ -59,10 +61,10 @@ regions:
             max: 2
             radius: 300
           - !<mobzy:spawn.gap>
-            range: 10..256
+            range: 10..4096
 
       - mob: mobzy:silkfang
-        priority: 0.5
+        priority: 2
         conditions:
           - !<mobzy:spawn.local_group>
             max: 4
@@ -70,7 +72,7 @@ regions:
           - !<geary:light>
             range: 4..15
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -83,7 +85,7 @@ regions:
             max: 2
             radius: 150
           - !<mobzy:spawn.gap>
-            range: 10..256
+            range: 10..4096
         #   - !<geary:time>
         #     min: 13000
         #     max: 23000
@@ -96,7 +98,7 @@ regions:
             max: 3
             radius: 60
           - !<mobzy:spawn.gap>
-            range: 10..256
+            range: 10..4096
 
   - name: Orth
     spawns:
@@ -109,7 +111,7 @@ regions:
             max: 2
             radius: 100
           - !<mobzy:spawn.gap>
-            range: 4..256
+            range: 4..4096
           - !<geary:block_type>
             allow:
               - STONE
@@ -142,7 +144,7 @@ regions:
             max: 4
             radius: 200
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:light>
             range: 7..15
           - !<geary:block_type>
@@ -170,7 +172,7 @@ regions:
             max: 3
             radius: 120
           - !<mobzy:spawn.gap>
-            range: 10..256
+            range: 10..4096
 
       - mob: mobzy:rohana
         amount: 1..4
@@ -182,7 +184,7 @@ regions:
           - !<geary:light>
             range: 4..10
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:block_type>
             allow:
               - WATER
@@ -195,7 +197,7 @@ regions:
             max: 8
             radius: 150
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -207,7 +209,7 @@ regions:
             max: 3
             radius: 75
           - !<mobzy:spawn.gap>
-            range: 5..256
+            range: 5..4096
           - !<geary:block_type>
             allow:
               - WATER
@@ -220,7 +222,7 @@ regions:
             max: 3
             radius: 100
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:time>
             min: 13000
             max: 23000
@@ -257,13 +259,13 @@ regions:
             max: 8
             radius: 120
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:height>
             min: 140
           - !<geary:light>
             range: 1..9
-          - !<mobzy:spawn.delay>
-            attemptEvery: 15s
+          # - !<mobzy:spawn.delay>
+          #   attemptEvery: 15s
           - !<geary:block_type>
             allow:
               - BIRCH_LEAVES
@@ -291,7 +293,7 @@ regions:
             max: 3
             radius: 150
           - !<mobzy:spawn.gap>
-            range: 10..256
+            range: 10..4096
 
       - mob: mobzy:sakuranbo
         amount: 1..3
@@ -301,7 +303,9 @@ regions:
             max: 6
             radius: 100
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
+          # - !<mobzy:spawn.delay>
+          #   attemptEvery: 1s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -317,7 +321,7 @@ regions:
           - !<geary:light>
             range: 4..15
           - !<mobzy:spawn.gap>
-            range: 5..256
+            range: 5..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -333,7 +337,7 @@ regions:
           - !<geary:light>
             range: 1..10
           - !<mobzy:spawn.gap>
-            range: 2..256
+            range: 2..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -351,7 +355,7 @@ regions:
           - !<geary:light>
             range: 1..7
           - !<mobzy:spawn.gap>
-            range: 2..256
+            range: 2..4096
           - !<geary:block_type>
             allow:
               - WHITE_CONCRETE
@@ -367,7 +371,7 @@ regions:
           - !<geary:light>
             range: 1..7
           - !<mobzy:spawn.gap>
-            range: 2..256
+            range: 2..4096
           - !<geary:block_type>
             allow:
               - WHITE_CONCRETE
@@ -383,10 +387,10 @@ regions:
           - !<geary:time>
             min: 13000
             max: 23000
-          - !<mobzy:spawn.delay>
-            attemptEvery: 10s
+          # - !<mobzy:spawn.delay>
+          #   attemptEvery: 10s
           - !<mobzy:spawn.gap>
-            range: 8..256
+            range: 8..4096
           - !<geary:block_type>
             allow:
               - WATER
@@ -399,9 +403,9 @@ regions:
             max: 12
             radius: 200
           - !<mobzy:spawn.gap>
-            range: 3..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 2s
+            range: 3..4096
+          # - !<mobzy:spawn.delay>
+          #   attemptEvery: 1s
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -421,7 +425,7 @@ regions:
             max: 3
             radius: 300
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:block_type>
             allow:
               - WATER
@@ -434,7 +438,7 @@ regions:
           - !<geary:light>
             range: 1..8
           - !<mobzy:spawn.gap>
-            range: 5..256
+            range: 5..4096
           - !<geary:block_type>
             allow:
               - WATER
@@ -447,9 +451,9 @@ regions:
             max: 3
             radius: 200
           - !<mobzy:spawn.gap>
-            range: 10..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 15s
+            range: 10..4096
+          # - !<mobzy:spawn.delay>
+          #   attemptEvery: 15s
 
       - mob: mobzy:shroombear
         amount: 1..2
@@ -461,7 +465,7 @@ regions:
           - !<geary:light>
             range: 4..15
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -476,7 +480,7 @@ regions:
           - !<geary:light>
             range: 4..15
           - !<mobzy:spawn.gap>
-            range: 4..256
+            range: 4..4096
           - !<geary:block_type>
             allow:
               - WATER
@@ -491,7 +495,7 @@ regions:
           - !<geary:light>
             range: 5..15
           - !<mobzy:spawn.gap>
-            range: 5..256
+            range: 5..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -517,7 +521,7 @@ regions:
             max: 6
             radius: 300
           - !<mobzy:spawn.gap>
-            range: 5..256
+            range: 5..4096
           - !<geary:block_type>
             allow:
               - SNOW_BLOCK
@@ -544,7 +548,7 @@ regions:
           - !<geary:light>
             range: 7..15
           - !<mobzy:spawn.gap>
-            range: 3..256
+            range: 3..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -559,7 +563,7 @@ regions:
           - !<geary:light>
             range: 5..15
           - !<mobzy:spawn.gap>
-            range: 4..256
+            range: 4..4096
           - !<geary:block_type>
             allow:
               - GRASS_BLOCK
@@ -572,9 +576,9 @@ regions:
             max: 6
             radius: 300
           - !<mobzy:spawn.gap>
-            range: 4..256
-          - !<mobzy:spawn.delay>
-            attemptEvery: 8s
+            range: 4..4096
+          # - !<mobzy:spawn.delay>
+          #   attemptEvery: 8s
           - !<geary:block_type>
             allow:
               - SAND
